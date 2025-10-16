@@ -104,18 +104,17 @@
               mergeFiles(getParts("Build/Build.wasm.code.unityweb", 1, 2)),
           ]);
   
-          const json = {
+          const json ={
 "companyName": "SpanishFreddy",
 "productName": "Cuphead",
 "dataUrl": dataUrl,
 "wasmCodeUrl": wasmurl,
-"wasmFrameworkUrl": "Build.wasm.framework.unityweb",
-"asmCodeUrl": asmurl,
-"asmMemoryUrl": "Build.asm.memory.unityweb",
-"asmFrameworkUrl": "Build.asm.framework.unityweb",
-// last memory size was too big for some people so maybe this is good enough
-"TOTAL_MEMORY": 134217728,
-"graphicsAPI": ["WebGL 2.0"],
+"wasmFrameworkUrl": "Cuphead.wasm.framework.unityweb",
+"asmCodeUrl": "Cuphead.asm.code.unityweb",
+"asmMemoryUrl": asmurl,
+"asmFrameworkUrl": "Cuphead.asm.framework.unityweb",
+"TOTAL_MEMORY": 2130706432,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
 "backgroundColor": "#231F20"
