@@ -31,6 +31,15 @@
     <div id="loading-text" style="color: white; font-size: 48px; font-family: cursive; text-align: center; margin-top: 20px;"> LOADING... </div>
     <div id="unityContainer"></div>
     <script>
+      // Warning confirmation
+      const userConfirmed = confirm("THIS GAME IS VERY BIG AND WILL MOST LIKELY CRASH IF YOU'RE ON CHROMEBOOK YOU HAVE BEEN WARNED");
+      
+      if (!userConfirmed) {
+        // If user clicks "Cancel", stop execution and show a message
+        document.body.innerHTML = '<div style="color: white; font-size: 24px; text-align: center; margin-top: 50px;">Game loading cancelled by user.</div>';
+        throw new Error("Game loading cancelled by user");
+      }
+
       var loadingText = document.querySelector("#loading-text");
   
       let loadedBytes = 0;
